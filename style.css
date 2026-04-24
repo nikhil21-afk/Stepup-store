@@ -1,0 +1,161 @@
+body {
+margin: 0;
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(to right, #ece9e6, #ffffff);
+}
+
+/* HEADER */
+header {
+background: black;
+color: white;
+padding: 15px 40px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+header span {
+color: red;
+}
+
+nav button {
+margin-left: 10px;
+padding: 8px 14px;
+background: red;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.page {
+display: none;
+min-height: 80vh;
+padding: 30px;
+}
+
+/* CENTER ONLY SIGNUP PAGE */
+#signupPage {
+display: none;
+justify-content: center;
+align-items: center;
+}
+
+/* when active */
+#signupPage.active {
+display: flex;
+}
+
+.active {
+display: block;
+}
+
+/* SIGNUP */
+.form-box {
+background: white;
+padding: 30px;
+width: 320px;
+border-radius: 12px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+text-align: left; /* THIS FIXES ALIGNMENT */
+}
+
+.form-box h2 {
+text-align: center;
+margin-bottom: 15px;
+}
+
+input {
+width: 100%;
+padding: 12px;
+margin: 10px 0;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+
+.error-box {
+display: none;
+background: #ffe6e6;
+color: red;
+padding: 6px;
+border-radius: 5px;
+}
+
+/* PRODUCTS */
+.title {
+margin-left: 10px;
+}
+
+.products {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 25px;
+padding: 20px;
+}
+
+.card {
+background: white;
+padding: 15px;
+border-radius: 15px;
+text-align: center;
+box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+transition: 0.3s;
+}
+
+.card:hover {
+transform: translateY(-8px);
+}
+
+.card img {
+width: 100%;
+height: 160px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+.price {
+color: red;
+font-weight: bold;
+margin: 10px 0;
+}
+
+/* BUTTON */
+button {
+background: black;
+color: white;
+padding: 8px 12px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+button:hover {
+background: red;
+}
+
+/* CART */
+#cart {
+background: white;
+padding: 15px;
+margin: 20px;
+border-radius: 10px;
+min-height: 50px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cart-item {
+display: flex;
+justify-content: space-between;
+padding: 8px;
+border-bottom: 1px solid #eee;
+}
+
+.remove-btn {
+background: red;
+padding: 4px 8px;
+font-size: 12px;
+}
+
+.cart-footer {
+text-align: center;
+}

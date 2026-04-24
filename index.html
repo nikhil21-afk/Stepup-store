@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StepUp Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Step<span>Up</span></h1>
+<nav>
+<button onclick="showPage('shop')">Shop</button>
+<button onclick="showPage('signup')">Sign Up</button>
+</nav>
+</header>
+
+<!-- SIGNUP -->
+<section id="signupPage" class="page">
+<div class="form-box">
+<h2>Create Account</h2>
+
+<form id="form">
+<input type="text" placeholder="Full Name" required>
+<input type="email" placeholder="Email" required>
+
+<input type="password" id="password" placeholder="Password" required>
+<div id="passError" class="error-box">Weak Password</div>
+
+<input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+<div id="confirmError" class="error-box">Passwords do not match</div>
+
+<button type="submit">Sign Up</button>
+</form>
+</div>
+</section>
+
+<!-- SHOP -->
+<section id="shopPage" class="page active">
+
+<h2 class="title">🔥 Trending Shoes</h2>
+<div class="products" id="products"></div>
+
+<h2 class="title">🛒 Cart</h2>
+<div id="cart"></div>
+
+<div class="cart-footer">
+<h3 id="total">Total: ₹0</h3>
+<button onclick="clearCart()">Clear Cart</button>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
