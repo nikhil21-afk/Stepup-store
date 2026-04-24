@@ -1,4 +1,4 @@
-// PAGE SWITCH
+
 function showPage(page){
 document.getElementById("signupPage").classList.remove("active");
 document.getElementById("shopPage").classList.remove("active");
@@ -10,7 +10,7 @@ document.getElementById("shopPage").classList.add("active");
 }
 }
 
-// SIGNUP VALIDATION
+
 document.getElementById("form").addEventListener("submit", function(e){
 e.preventDefault();
 
@@ -44,7 +44,7 @@ showPage("shop");
 }
 });
 
-// PRODUCTS (15 SHOES)
+
 const products = [
 {
 name: "Nike Air Max 270",
@@ -118,7 +118,7 @@ img: "https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/pro
 }
 ];
 
-// LOAD PRODUCTS
+
 function loadProducts(){
 let container = document.getElementById("products");
 
@@ -134,7 +134,7 @@ container.innerHTML = products.map(item => `
 
 loadProducts();
 
-// CART
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function addToCart(name, price){
