@@ -4,7 +4,7 @@ font-family: 'Segoe UI', sans-serif;
 background: linear-gradient(to right, #ece9e6, #ffffff);
 }
 
-/* HEADER */
+
 header {
 background: black;
 color: white;
@@ -34,14 +34,14 @@ min-height: 80vh;
 padding: 30px;
 }
 
-/* CENTER ONLY SIGNUP PAGE */
+
 #signupPage {
 display: none;
 justify-content: center;
 align-items: center;
 }
 
-/* when active */
+
 #signupPage.active {
 display: flex;
 }
@@ -50,14 +50,14 @@ display: flex;
 display: block;
 }
 
-/* SIGNUP */
+
 .form-box {
 background: white;
 padding: 30px;
 width: 320px;
 border-radius: 12px;
 box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-text-align: left; /* THIS FIXES ALIGNMENT */
+text-align: left; 
 }
 
 .form-box h2 {
@@ -81,7 +81,7 @@ padding: 6px;
 border-radius: 5px;
 }
 
-/* PRODUCTS */
+
 .title {
 margin-left: 10px;
 }
@@ -133,7 +133,7 @@ button:hover {
 background: red;
 }
 
-/* CART */
+
 #cart {
 background: white;
 padding: 15px;
